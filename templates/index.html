@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<title>{{title}}</title>
+
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+
+    <br/>
+    <h1>Here I will display the data</h1>
+    <br/>
+    <table border="1" cellpadding="10px">
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+        {% for i in celldata %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.phone}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
